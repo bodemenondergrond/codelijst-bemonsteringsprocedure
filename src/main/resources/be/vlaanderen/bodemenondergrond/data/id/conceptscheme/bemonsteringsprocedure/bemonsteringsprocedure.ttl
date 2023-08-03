@@ -1,0 +1,35 @@
+@prefix colt: <https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/> .
+@prefix cs:   <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/> .
+@prefix ct:   <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/> .
+@prefix dc:   <http://purl.org/dc/elements/1.1/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+cs:bemonsteringsprocedure
+        rdf:type            skos:ConceptScheme ;
+        dc:identifier       "bemonsteringsprocedure" ;
+        skos:definition     "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl ;
+        skos:hasTopConcept  ct:bam , ct:boc ;
+        skos:prefLabel      "Codelijst bemonsteringsprocedure."@nl .
+
+ct:boc  rdf:type           skos:Concept ;
+        dc:identifier      "boc" ;
+        skos:inScheme      cs:bemonsteringsprocedure ;
+        skos:prefLabel     "Compendium BOC"@nl ;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:bam  rdf:type           skos:Concept ;
+        dc:identifier      "bam" ;
+        skos:inScheme      cs:bemonsteringsprocedure ;
+        skos:prefLabel     "Compendium BAM"@nl ;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+colt:bemonsteringsprocedures
+        rdf:type        skos:Collection ;
+        dc:identifier   "bemonsteringsprocedures" ;
+        skos:inScheme   cs:bemonsteringsprocedure ;
+        skos:member     ct:bam , ct:boc ;
+        skos:prefLabel  "Collectie van bemonsteringsprocedures."@nl .
