@@ -1,5 +1,5 @@
-type,uri,dc.id,collection,notation,prefLabel,altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf
-skos:ConceptScheme,cs:bemonsteringsprocedure,bemonsteringsprocedure,,,Codelijst bemonsteringsprocedure.,,,,,,,Beschrijving welke procedure werd gevolgd bij de bemonstering.,,,,,,,,,,,,,
-skos:Collection,colt:bemonsteringsprocedures,bemonsteringsprocedures,,,Collectie van bemonsteringsprocedures.,,,,,,,,,,,,,cs:bemonsteringsprocedure,,,,,,,
-skos:Concept,ct:boc,boc,colt:bemonsteringsprocedures,,Compendium BOC,,,,,,,,,,,,,cs:bemonsteringsprocedure,,,,,,,cs:bemonsteringsprocedure
-skos:Concept,ct:bam,bam,colt:bemonsteringsprocedures,,Compendium BAM,,,,,,,,,,,,,cs:bemonsteringsprocedure,,,,,,,cs:bemonsteringsprocedure
+type,uri,dc.id,collection,notation,prefLabel,altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf,seeAlso
+skos:ConceptScheme,cs:bemonsteringsprocedure,bemonsteringsprocedure,,,Codelijst bemonsteringsprocedure.,,,,,,,Beschrijving welke procedure werd gevolgd bij de bemonstering.,,,,,,,,,,,,,,
+skos:Collection,colt:bemonsteringsprocedures,bemonsteringsprocedures,,,Collectie van bemonsteringsprocedures.,,,,,,,,,,,,,cs:bemonsteringsprocedure,,,,,,,,
+skos:Concept,ct:boc,boc,colt:bemonsteringsprocedures,boc,Compendium BOC,,,,,,,,,,,,,cs:bemonsteringsprocedure,,,,,,,cs:bemonsteringsprocedure,
+skos:Concept,ct:bam,bam,colt:bemonsteringsprocedures,bam,Compendium BAM,,,,,,,,,,,,,cs:bemonsteringsprocedure,,,,,,,cs:bemonsteringsprocedure,mest-bodem-veevoeder:compendium-bam

@@ -1,6 +1,26 @@
 {
     "@graph": [
         {
+            "@id": "colt:bemonsteringsprocedures",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Collectie van bemonsteringsprocedures."
+            },
+            "skos:member": [
+                {
+                    "@id": "ct:boc"
+                },
+                {
+                    "@id": "ct:bam"
+                }
+            ],
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "bemonsteringsprocedures",
+            "@type": "skos:Collection"
+        },
+        {
             "@id": "ct:boc",
             "skos:topConceptOf": {
                 "@id": "cs:bemonsteringsprocedure"
@@ -9,10 +29,30 @@
                 "@language": "nl",
                 "@value": "Compendium BOC"
             },
+            "skos:notation": "boc",
             "skos:inScheme": {
                 "@id": "cs:bemonsteringsprocedure"
             },
             "dc:identifier": "boc",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:bam",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Compendium BAM"
+            },
+            "skos:notation": "bam",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "bam",
+            "rdfs:seeAlso": {
+                "@id": "mest-bodem-veevoeder:compendium-bam"
+            },
             "@type": "skos:Concept"
         },
         {
@@ -35,51 +75,18 @@
             },
             "dc:identifier": "bemonsteringsprocedure",
             "@type": "skos:ConceptScheme"
-        },
-        {
-            "@id": "ct:bam",
-            "skos:topConceptOf": {
-                "@id": "cs:bemonsteringsprocedure"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Compendium BAM"
-            },
-            "skos:inScheme": {
-                "@id": "cs:bemonsteringsprocedure"
-            },
-            "dc:identifier": "bam",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "colt:bemonsteringsprocedures",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Collectie van bemonsteringsprocedures."
-            },
-            "skos:member": [
-                {
-                    "@id": "ct:boc"
-                },
-                {
-                    "@id": "ct:bam"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:bemonsteringsprocedure"
-            },
-            "dc:identifier": "bemonsteringsprocedures",
-            "@type": "skos:Collection"
         }
     ],
     "@context": {
         "cs": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
         "ct": "https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/",
+        "mest-bodem-veevoeder": "https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/",
         "dct": "http://purl.org/dc/terms/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "colt": "https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "dc": "http://purl.org/dc/elements/1.1/",
         "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#"
     }
