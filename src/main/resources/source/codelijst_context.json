@@ -131,4 +131,7 @@
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "mest-bodem-veevoeder": "https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/"
+  "bodembescherming-gop": "https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/",
+  "water-gop": "https://emis.vito.be/nl/erkende-laboratoria/water-gop/",
+  "bodem-afvalstoffen-ovam": "https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/"
 }
