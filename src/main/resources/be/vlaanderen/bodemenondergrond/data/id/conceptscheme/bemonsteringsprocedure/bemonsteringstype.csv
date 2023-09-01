@@ -1,6 +1,0 @@
-"uri","type","dc.id","collection","notation","prefLabel","altLabel","broader","broaderTransitive","broadMatch","changeNote","closeMatch","definition","editorialNote","exactMatch","example","hiddenLabel","historyNote","inScheme","mappingRelation","note","related","relatedMatch","scopeNote","semanticRelation","topConceptOf"
-"colt:bemonsteringsprocedures","skos:Collection","bemonsteringsprocedures",,,"Collectie van bemonsteringsprocedures.",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,
-"cs:bemonsteringsprocedure","skos:ConceptScheme","bemonsteringsprocedure",,,"Codelijst bemonsteringsprocedure.",,,,,,,"Aard van de Bemonstering.",,,,,,,,,,,,,
-"ct:geroerd","skos:Concept","geroerd","colt:bemonsteringsprocedures",,"Geroerd",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure"
-"ct:ongeroerd","skos:Concept","ongeroerd","colt:bemonsteringsprocedures",,"Ongeroerd",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure"
-"ct:vloeistof","skos:Concept","vloeistof","colt:bemonsteringsprocedures",,"Vloeistof",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure"

@@ -3,6 +3,8 @@
   <xs:simpleType name="bemonsteringsprocedure">
     <xs:restriction base="xs:string">
       <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc"/>
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma"/>
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/wac"/>
       <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam"/>
     </xs:restriction>
   </xs:simpleType>

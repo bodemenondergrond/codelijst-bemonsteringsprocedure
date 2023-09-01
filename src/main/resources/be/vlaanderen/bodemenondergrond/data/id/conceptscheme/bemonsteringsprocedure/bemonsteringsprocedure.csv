@@ -2,4 +2,6 @@
 "colt:bemonsteringsprocedures","skos:Collection","bemonsteringsprocedures",,,"Collectie van bemonsteringsprocedures.",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,,
 "cs:bemonsteringsprocedure","skos:ConceptScheme","bemonsteringsprocedure",,,"Codelijst bemonsteringsprocedure.",,,,,,,"Beschrijving welke procedure werd gevolgd bij de bemonstering.",,,,,,,,,,,,,,
 "ct:bam","skos:Concept","bam","colt:bemonsteringsprocedures","bam","Compendium BAM",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure","mest-bodem-veevoeder:compendium-bam"
-"ct:boc","skos:Concept","boc","colt:bemonsteringsprocedures","boc","Compendium BOC",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure",
+"ct:boc","skos:Concept","boc","colt:bemonsteringsprocedures","boc","Compendium BOC",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure","bodembescherming-gop:compendium-boc"
+"ct:cma","skos:Concept","cma","colt:bemonsteringsprocedures","cma","Compendium CMA",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure","bodem-afvalstoffen-ovam:compendium-cma"
+"ct:wac","skos:Concept","wac","colt:bemonsteringsprocedures","wac","Compendium WAC",,,,,,,,,,,,,"cs:bemonsteringsprocedure",,,,,,,"cs:bemonsteringsprocedure","water-gop:compendium-wac"

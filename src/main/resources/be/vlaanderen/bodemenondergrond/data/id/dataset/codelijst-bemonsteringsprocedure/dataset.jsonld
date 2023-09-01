@@ -2,18 +2,22 @@
     "@graph": [
         {
             "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_rdf",
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringsprocedure, in xml rdf-formaat."
             },
             "dcterms:identifier": {
                 "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_rdf"
             },
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
+            },
             "dcterms:format": {
                 "@id": "file_type:RDF_XML"
             },
-            "dcat:mediaType": {
-                "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
+            "dcterms:issued": {
+                "@value": "2023-09-01",
+                "@type": "xsd:date"
             },
             "dcat:accessURL": {
                 "@id": "https://github.com/bodemenondergrond/codelijst-bemonsteringsprocedure.git"
@@ -42,11 +46,7 @@
             "foaf:page": {
                 "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_rdf.html"
             },
-            "@type": "dcat:Distribution",
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst bemonsteringsprocedure, in xml rdf-formaat."
-            }
+            "@type": "dcat:Distribution"
         },
         {
             "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_csv",
@@ -69,6 +69,10 @@
             "dcat:downloadURL": {
                 "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure.csv"
             },
+            "dcterms:issued": {
+                "@value": "2023-09-01",
+                "@type": "xsd:date"
+            },
             "dcterms:identifier": {
                 "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_csv"
             },
@@ -76,10 +80,6 @@
             "rdfs:label": {
                 "@language": "nl",
                 "@value": "Codelijst bemonsteringsprocedure, in text/csv formaat."
-            },
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
             },
             "foaf:page": {
                 "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_csv.html"
@@ -129,12 +129,12 @@
             "dcterms:identifier": {
                 "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_xsd"
             },
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
             "dcat:downloadURL": {
                 "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure.xsd"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-01",
+                "@type": "xsd:date"
             },
             "dcat:accessURL": {
                 "@id": "https://github.com/bodemenondergrond/codelijst-bemonsteringsprocedure.git"
@@ -221,10 +221,6 @@
                 "@language": "nl",
                 "@value": "Dataset codelijst bemonsteringsprocedure"
             },
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
             "foaf:page": {
                 "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/codelijst-bemonsteringsprocedure.0.1.0.html"
             },
@@ -242,6 +238,10 @@
             "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.dataset.codelijst-bemonsteringsprocedure.0.1.0",
             "dcat:contactPoint": {
                 "@id": "omg_id:vcard/helpdesk"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-01",
+                "@type": "xsd:date"
             },
             "dcterms:temporal": {
                 "@id": "omg_id:periodoftime/dataset_omg"
@@ -283,16 +283,16 @@
             "dcat:mediaType": {
                 "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
             },
-            "dcterms:identifier": {
-                "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_jsonld"
-            },
             "rdfs:label": {
                 "@language": "nl",
                 "@value": "Codelijst bemonsteringsprocedure, in jsonld rdf-formaat."
             },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure_jsonld"
+            },
             "@type": "dcat:Distribution",
             "dcterms:issued": {
-                "@value": "2023-08-03",
+                "@value": "2023-09-01",
                 "@type": "xsd:date"
             },
             "dcterms:description": {
@@ -320,10 +320,6 @@
                 "spdx:Package",
                 "dcat:Distribution"
             ],
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
             "dcterms:accessRights": {
                 "@id": "access_right:PUBLIC"
             },
@@ -333,6 +329,10 @@
             "spdx:versionInfo": "0.1.0",
             "spdx:downloadLocation": {
                 "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/bodemenondergrond/data/id/graph/codelijst-bemonsteringsprocedure/0.1.0/codelijst-bemonsteringsprocedure-0.1.0.jar"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-01",
+                "@type": "xsd:date"
             },
             "dcterms:rightsHolder": {
                 "@id": "ovo:OVO003751"
@@ -394,11 +394,11 @@
             "dcat:accessURL": {
                 "@id": "https://github.com/bodemenondergrond/codelijst-bemonsteringsprocedure.git"
             },
-            "@type": "dcat:Distribution",
             "dcterms:issued": {
-                "@value": "2023-08-03",
+                "@value": "2023-09-01",
                 "@type": "xsd:date"
             },
+            "@type": "dcat:Distribution",
             "dcat:downloadURL": {
                 "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-bemonsteringsprocedure.0.1.0.bemonsteringsprocedure.ttl"
             }

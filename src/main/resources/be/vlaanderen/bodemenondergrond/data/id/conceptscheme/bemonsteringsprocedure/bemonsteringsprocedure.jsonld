@@ -1,24 +1,31 @@
 {
     "@graph": [
         {
-            "@id": "colt:bemonsteringsprocedures",
+            "@id": "cs:bemonsteringsprocedure",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Collectie van bemonsteringsprocedures."
+                "@value": "Codelijst bemonsteringsprocedure."
             },
-            "skos:member": [
+            "skos:hasTopConcept": [
                 {
                     "@id": "ct:boc"
                 },
                 {
                     "@id": "ct:bam"
+                },
+                {
+                    "@id": "ct:wac"
+                },
+                {
+                    "@id": "ct:cma"
                 }
             ],
-            "skos:inScheme": {
-                "@id": "cs:bemonsteringsprocedure"
+            "skos:definition": {
+                "@language": "nl",
+                "@value": "Beschrijving welke procedure werd gevolgd bij de bemonstering."
             },
-            "dc:identifier": "bemonsteringsprocedures",
-            "@type": "skos:Collection"
+            "dc:identifier": "bemonsteringsprocedure",
+            "@type": "skos:ConceptScheme"
         },
         {
             "@id": "ct:boc",
@@ -34,6 +41,9 @@
                 "@id": "cs:bemonsteringsprocedure"
             },
             "dc:identifier": "boc",
+            "rdfs:seeAlso": {
+                "@id": "bodembescherming-gop:compendium-boc"
+            },
             "@type": "skos:Concept"
         },
         {
@@ -56,38 +66,84 @@
             "@type": "skos:Concept"
         },
         {
-            "@id": "cs:bemonsteringsprocedure",
+            "@id": "ct:wac",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Codelijst bemonsteringsprocedure."
+                "@value": "Compendium WAC"
             },
-            "skos:hasTopConcept": [
+            "skos:notation": "wac",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "wac",
+            "rdfs:seeAlso": {
+                "@id": "water-gop:compendium-wac"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:cma",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Compendium CMA"
+            },
+            "skos:notation": "cma",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "cma",
+            "rdfs:seeAlso": {
+                "@id": "bodem-afvalstoffen-ovam:compendium-cma"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "colt:bemonsteringsprocedures",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Collectie van bemonsteringsprocedures."
+            },
+            "skos:member": [
                 {
                     "@id": "ct:boc"
                 },
                 {
                     "@id": "ct:bam"
+                },
+                {
+                    "@id": "ct:wac"
+                },
+                {
+                    "@id": "ct:cma"
                 }
             ],
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Beschrijving welke procedure werd gevolgd bij de bemonstering."
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
             },
-            "dc:identifier": "bemonsteringsprocedure",
-            "@type": "skos:ConceptScheme"
+            "dc:identifier": "bemonsteringsprocedures",
+            "@type": "skos:Collection"
         }
     ],
     "@context": {
-        "cs": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
-        "ct": "https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/",
         "mest-bodem-veevoeder": "https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/",
-        "dct": "http://purl.org/dc/terms/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "colt": "https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "dc": "http://purl.org/dc/elements/1.1/",
-        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#"
+        "bodembescherming-gop": "https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "cs": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
+        "ct": "https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/",
+        "dct": "http://purl.org/dc/terms/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "water-gop": "https://emis.vito.be/nl/erkende-laboratoria/water-gop/",
+        "colt": "https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/",
+        "bodem-afvalstoffen-ovam": "https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/",
+        "dc": "http://purl.org/dc/elements/1.1/"
     }
 }
