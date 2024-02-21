@@ -13,6 +13,15 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:ct="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991">
+    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <skos:prefLabel xml:lang="nl">NEN 5119:1991</skos:prefLabel>
+    <skos:notation>5119-1991</skos:notation>
+    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <dc:identifier>5119-1991</dc:identifier>
+    <rdfs:seeAlso rdf:resource="https://www.nen.nl/en/nen-5119-1991-nl-7926"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc">
     <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
     <skos:prefLabel xml:lang="nl">Compendium BOC</skos:prefLabel>
@@ -20,6 +29,15 @@
     <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
     <dc:identifier>boc</dc:identifier>
     <rdfs:seeAlso rdf:resource="https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/compendium-boc"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007">
+    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <skos:prefLabel xml:lang="nl">NBN EN ISO 22475-1:2007</skos:prefLabel>
+    <skos:notation>22475-1-2007</skos:notation>
+    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <dc:identifier>22475-1-2007</dc:identifier>
+    <rdfs:seeAlso rdf:resource="https://app.nbn.be/data/r/platform/frontend/detail?p40_id=241294&amp;p40_language_code=nl&amp;p40_detail_id=36579"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma">
@@ -40,6 +58,30 @@
     <rdfs:seeAlso rdf:resource="https://emis.vito.be/nl/erkende-laboratoria/water-gop/compendium-wac"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1">
+    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <skos:prefLabel xml:lang="nl">Cmon staalnameprotocol</skos:prefLabel>
+    <skos:notation>csp-1.1</skos:notation>
+    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <dc:identifier>csp-1.1</dc:identifier>
+    <rdfs:seeAlso rdf:resource="https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/bemonsteringsprocedures">
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cam2019"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1"/>
+    <skos:prefLabel xml:lang="nl">Collectie van bemonsteringsprocedures.</skos:prefLabel>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021"/>
+    <dc:identifier>bemonsteringsprocedures</dc:identifier>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/wac"/>
+    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam">
     <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
     <skos:prefLabel xml:lang="nl">Compendium BAM</skos:prefLabel>
@@ -49,24 +91,37 @@
     <rdfs:seeAlso rdf:resource="https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/compendium-bam"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/bemonsteringsprocedures">
-    <skos:prefLabel xml:lang="nl">Collectie van bemonsteringsprocedures.</skos:prefLabel>
-    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc"/>
-    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam"/>
-    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/wac"/>
-    <skos:member rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma"/>
+  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021">
+    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <skos:prefLabel xml:lang="nl">NBN EN ISO 22475-1:2021</skos:prefLabel>
+    <skos:notation>22475-1-2021</skos:notation>
     <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
-    <dc:identifier>bemonsteringsprocedures</dc:identifier>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <dc:identifier>22475-1-2021</dc:identifier>
+    <rdfs:seeAlso rdf:resource="https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&amp;p40_language_code=en&amp;p40_detail_id=98267"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure">
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma"/>
     <skos:prefLabel xml:lang="nl">Codelijst bemonsteringsprocedure.</skos:prefLabel>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021"/>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cam2019"/>
+    <dc:identifier>bemonsteringsprocedure</dc:identifier>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007"/>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1"/>
+    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991"/>
     <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc"/>
     <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam"/>
     <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/wac"/>
-    <skos:hasTopConcept rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma"/>
-    <skos:definition xml:lang="nl">Beschrijving welke procedure werd gevolgd bij de bemonstering.</skos:definition>
-    <dc:identifier>bemonsteringsprocedure</dc:identifier>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:definition xml:lang="nl">Beschrijving welke procedure werd gevolgd bij de bemonstering.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cam2019">
+    <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <skos:prefLabel xml:lang="nl">Code van Goede Praktijk voor Archeologie en Metaaldetectie</skos:prefLabel>
+    <skos:notation>cam2019</skos:notation>
+    <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/bemonsteringsprocedure"/>
+    <dc:identifier>cam2019</dc:identifier>
+    <rdfs:seeAlso rdf:resource="https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
 </rdf:RDF>

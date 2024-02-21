@@ -13,48 +13,88 @@
 @prefix xkos:                    <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd:                     <http://www.w3.org/2001/XMLSchema#> .
 
-cs:bemonsteringsprocedure
-        rdf:type            skos:ConceptScheme ;
-        dc:identifier       "bemonsteringsprocedure" ;
-        skos:definition     "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl ;
-        skos:hasTopConcept  ct:cma , ct:wac , ct:bam , ct:boc ;
-        skos:prefLabel      "Codelijst bemonsteringsprocedure."@nl .
-
-ct:boc  rdf:type           skos:Concept ;
-        rdfs:seeAlso       bodembescherming-gop:compendium-boc ;
-        dc:identifier      "boc" ;
-        skos:inScheme      cs:bemonsteringsprocedure ;
-        skos:notation      "boc" ;
-        skos:prefLabel     "Compendium BOC"@nl ;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:bam  rdf:type           skos:Concept ;
-        rdfs:seeAlso       mest-bodem-veevoeder:compendium-bam ;
-        dc:identifier      "bam" ;
-        skos:inScheme      cs:bemonsteringsprocedure ;
-        skos:notation      "bam" ;
-        skos:prefLabel     "Compendium BAM"@nl ;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:wac  rdf:type           skos:Concept ;
-        rdfs:seeAlso       water-gop:compendium-wac ;
-        dc:identifier      "wac" ;
-        skos:inScheme      cs:bemonsteringsprocedure ;
-        skos:notation      "wac" ;
-        skos:prefLabel     "Compendium WAC"@nl ;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:cma  rdf:type           skos:Concept ;
-        rdfs:seeAlso       bodem-afvalstoffen-ovam:compendium-cma ;
-        dc:identifier      "cma" ;
-        skos:inScheme      cs:bemonsteringsprocedure ;
-        skos:notation      "cma" ;
-        skos:prefLabel     "Compendium CMA"@nl ;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
 colt:bemonsteringsprocedures
-        rdf:type        skos:Collection ;
-        dc:identifier   "bemonsteringsprocedures" ;
-        skos:inScheme   cs:bemonsteringsprocedure ;
-        skos:member     ct:cma , ct:wac , ct:bam , ct:boc ;
+        rdf:type        skos:Collection;
+        dc:identifier   "bemonsteringsprocedures";
+        skos:inScheme   cs:bemonsteringsprocedure;
+        skos:member     ct:cam2019 , ct:5119-1991 , ct:22475-1-2007 , ct:cma , ct:csp-1.1 , ct:bam , ct:22475-1-2021 , ct:wac , ct:boc;
         skos:prefLabel  "Collectie van bemonsteringsprocedures."@nl .
+
+ct:cma  rdf:type           skos:Concept;
+        rdfs:seeAlso       bodem-afvalstoffen-ovam:compendium-cma;
+        dc:identifier      "cma";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "cma";
+        skos:prefLabel     "Compendium CMA"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:22475-1-2007  rdf:type  skos:Concept;
+        rdfs:seeAlso       <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=241294&p40_language_code=nl&p40_detail_id=36579>;
+        dc:identifier      "22475-1-2007";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "22475-1-2007";
+        skos:prefLabel     "NBN EN ISO 22475-1:2007"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:wac  rdf:type           skos:Concept;
+        rdfs:seeAlso       water-gop:compendium-wac;
+        dc:identifier      "wac";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "wac";
+        skos:prefLabel     "Compendium WAC"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:csp-1.1  rdf:type       skos:Concept;
+        rdfs:seeAlso       <https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf>;
+        dc:identifier      "csp-1.1";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "csp-1.1";
+        skos:prefLabel     "Cmon staalnameprotocol"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:cam2019  rdf:type       skos:Concept;
+        rdfs:seeAlso       <https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf>;
+        dc:identifier      "cam2019";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "cam2019";
+        skos:prefLabel     "Code van Goede Praktijk voor Archeologie en Metaaldetectie"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:22475-1-2021  rdf:type  skos:Concept;
+        rdfs:seeAlso       <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&p40_language_code=en&p40_detail_id=98267>;
+        dc:identifier      "22475-1-2021";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "22475-1-2021";
+        skos:prefLabel     "NBN EN ISO 22475-1:2021"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:5119-1991  rdf:type     skos:Concept;
+        rdfs:seeAlso       <https://www.nen.nl/en/nen-5119-1991-nl-7926>;
+        dc:identifier      "5119-1991";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "5119-1991";
+        skos:prefLabel     "NEN 5119:1991"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:bam  rdf:type           skos:Concept;
+        rdfs:seeAlso       mest-bodem-veevoeder:compendium-bam;
+        dc:identifier      "bam";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "bam";
+        skos:prefLabel     "Compendium BAM"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+ct:boc  rdf:type           skos:Concept;
+        rdfs:seeAlso       bodembescherming-gop:compendium-boc;
+        dc:identifier      "boc";
+        skos:inScheme      cs:bemonsteringsprocedure;
+        skos:notation      "boc";
+        skos:prefLabel     "Compendium BOC"@nl;
+        skos:topConceptOf  cs:bemonsteringsprocedure .
+
+cs:bemonsteringsprocedure
+        rdf:type            skos:ConceptScheme;
+        dc:identifier       "bemonsteringsprocedure";
+        skos:definition     "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl;
+        skos:hasTopConcept  ct:cma , ct:22475-1-2021 , ct:cam2019 , ct:22475-1-2007 , ct:csp-1.1 , ct:5119-1991 , ct:boc , ct:bam , ct:wac;
+        skos:prefLabel      "Codelijst bemonsteringsprocedure."@nl .

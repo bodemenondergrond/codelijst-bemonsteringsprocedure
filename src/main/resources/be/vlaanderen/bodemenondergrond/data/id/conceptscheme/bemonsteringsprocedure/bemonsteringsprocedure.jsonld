@@ -1,12 +1,124 @@
 {
     "@graph": [
         {
-            "@id": "cs:bemonsteringsprocedure",
+            "@id": "colt:bemonsteringsprocedures",
+            "skos:member": [
+                {
+                    "@id": "ct:cam2019"
+                },
+                {
+                    "@id": "ct:5119-1991"
+                },
+                {
+                    "@id": "ct:22475-1-2007"
+                },
+                {
+                    "@id": "ct:cma"
+                },
+                {
+                    "@id": "ct:csp-1.1"
+                },
+                {
+                    "@id": "ct:bam"
+                },
+                {
+                    "@id": "ct:22475-1-2021"
+                },
+                {
+                    "@id": "ct:wac"
+                },
+                {
+                    "@id": "ct:boc"
+                }
+            ],
+            "@type": "skos:Collection",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Codelijst bemonsteringsprocedure."
+                "@value": "Collectie van bemonsteringsprocedures."
             },
+            "dc:identifier": "bemonsteringsprocedures"
+        },
+        {
+            "@id": "ct:cam2019",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Code van Goede Praktijk voor Archeologie en Metaaldetectie"
+            },
+            "skos:notation": "cam2019",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "cam2019",
+            "rdfs:seeAlso": {
+                "@id": "https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:5119-1991",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "NEN 5119:1991"
+            },
+            "skos:notation": "5119-1991",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "5119-1991",
+            "rdfs:seeAlso": {
+                "@id": "https://www.nen.nl/en/nen-5119-1991-nl-7926"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:22475-1-2007",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "NBN EN ISO 22475-1:2007"
+            },
+            "skos:notation": "22475-1-2007",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "22475-1-2007",
+            "rdfs:seeAlso": {
+                "@id": "https://app.nbn.be/data/r/platform/frontend/detail?p40_id=241294&p40_language_code=nl&p40_detail_id=36579"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "cs:bemonsteringsprocedure",
             "skos:hasTopConcept": [
+                {
+                    "@id": "ct:cma"
+                },
+                {
+                    "@id": "ct:22475-1-2021"
+                },
+                {
+                    "@id": "ct:cam2019"
+                },
+                {
+                    "@id": "ct:22475-1-2007"
+                },
+                {
+                    "@id": "ct:csp-1.1"
+                },
+                {
+                    "@id": "ct:5119-1991"
+                },
                 {
                     "@id": "ct:boc"
                 },
@@ -15,34 +127,54 @@
                 },
                 {
                     "@id": "ct:wac"
-                },
-                {
-                    "@id": "ct:cma"
                 }
             ],
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Codelijst bemonsteringsprocedure."
+            },
+            "dc:identifier": "bemonsteringsprocedure",
+            "@type": "skos:ConceptScheme",
             "skos:definition": {
                 "@language": "nl",
                 "@value": "Beschrijving welke procedure werd gevolgd bij de bemonstering."
-            },
-            "dc:identifier": "bemonsteringsprocedure",
-            "@type": "skos:ConceptScheme"
+            }
         },
         {
-            "@id": "ct:boc",
+            "@id": "ct:cma",
             "skos:topConceptOf": {
                 "@id": "cs:bemonsteringsprocedure"
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Compendium BOC"
+                "@value": "Compendium CMA"
             },
-            "skos:notation": "boc",
+            "skos:notation": "cma",
             "skos:inScheme": {
                 "@id": "cs:bemonsteringsprocedure"
             },
-            "dc:identifier": "boc",
+            "dc:identifier": "cma",
             "rdfs:seeAlso": {
-                "@id": "bodembescherming-gop:compendium-boc"
+                "@id": "bodem-afvalstoffen-ovam:compendium-cma"
+            },
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:csp-1.1",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Cmon staalnameprotocol"
+            },
+            "skos:notation": "csp-1.1",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "csp-1.1",
+            "rdfs:seeAlso": {
+                "@id": "https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf"
             },
             "@type": "skos:Concept"
         },
@@ -66,6 +198,25 @@
             "@type": "skos:Concept"
         },
         {
+            "@id": "ct:22475-1-2021",
+            "skos:topConceptOf": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "NBN EN ISO 22475-1:2021"
+            },
+            "skos:notation": "22475-1-2021",
+            "skos:inScheme": {
+                "@id": "cs:bemonsteringsprocedure"
+            },
+            "dc:identifier": "22475-1-2021",
+            "rdfs:seeAlso": {
+                "@id": "https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&p40_language_code=en&p40_detail_id=98267"
+            },
+            "@type": "skos:Concept"
+        },
+        {
             "@id": "ct:wac",
             "skos:topConceptOf": {
                 "@id": "cs:bemonsteringsprocedure"
@@ -85,49 +236,23 @@
             "@type": "skos:Concept"
         },
         {
-            "@id": "ct:cma",
+            "@id": "ct:boc",
             "skos:topConceptOf": {
                 "@id": "cs:bemonsteringsprocedure"
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Compendium CMA"
+                "@value": "Compendium BOC"
             },
-            "skos:notation": "cma",
+            "skos:notation": "boc",
             "skos:inScheme": {
                 "@id": "cs:bemonsteringsprocedure"
             },
-            "dc:identifier": "cma",
+            "dc:identifier": "boc",
             "rdfs:seeAlso": {
-                "@id": "bodem-afvalstoffen-ovam:compendium-cma"
+                "@id": "bodembescherming-gop:compendium-boc"
             },
             "@type": "skos:Concept"
-        },
-        {
-            "@id": "colt:bemonsteringsprocedures",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Collectie van bemonsteringsprocedures."
-            },
-            "skos:member": [
-                {
-                    "@id": "ct:boc"
-                },
-                {
-                    "@id": "ct:bam"
-                },
-                {
-                    "@id": "ct:wac"
-                },
-                {
-                    "@id": "ct:cma"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:bemonsteringsprocedure"
-            },
-            "dc:identifier": "bemonsteringsprocedures",
-            "@type": "skos:Collection"
         }
     ],
     "@context": {
