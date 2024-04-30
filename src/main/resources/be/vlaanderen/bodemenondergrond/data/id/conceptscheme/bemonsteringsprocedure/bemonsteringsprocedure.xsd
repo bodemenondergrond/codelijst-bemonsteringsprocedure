@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://bemonsteringsprocedure.bodemenondergrond.dov.vlaanderen.be">
-  <xs:simpleType name="bemonsteringsprocedure">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:be.vlaanderen.bodemenondergrond.data.id.graph:codelijst-bemonsteringsprocedure">
+  <xs:simpleType name="be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringsprocedure">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/wac"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021"/>
-      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cam2019"/>
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/bam" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/boc" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cam2019" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/cma" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/wac" />
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

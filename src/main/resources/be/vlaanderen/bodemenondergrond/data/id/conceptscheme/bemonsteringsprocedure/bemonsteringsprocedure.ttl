@@ -1,100 +1,134 @@
-@prefix bodem-afvalstoffen-ovam: <https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/> .
-@prefix bodembescherming-gop:    <https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/> .
-@prefix colt:                    <https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/> .
-@prefix cs:                      <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/> .
-@prefix ct:                      <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/> .
-@prefix dc:                      <http://purl.org/dc/elements/1.1/> .
-@prefix dct:                     <http://purl.org/dc/terms/> .
-@prefix mest-bodem-veevoeder:    <https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/> .
-@prefix rdf:                     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:                    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:                    <http://www.w3.org/2004/02/skos/core#> .
-@prefix water-gop:               <https://emis.vito.be/nl/erkende-laboratoria/water-gop/> .
-@prefix xkos:                    <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd:                     <http://www.w3.org/2001/XMLSchema#> .
+@prefix concept: <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/>.
+@prefix collectie: <https://data.bodemenondergrond.vlaanderen.be/id/collection/bemonsteringsprocedure/>.
+@prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix assettype: <http://purl.org/adms/assettype/>.
+@prefix bodembescherming-gop: <https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/>.
+@prefix conceptscheme: <https://data.omgeving.vlaanderen.be/id/conceptscheme/>.
+@prefix country: <http://publications.europa.eu/resource/authority/country/>.
+@prefix datasets: <https://datasets.omgeving.vlaanderen.be/>.
+@prefix datatheme_be: <http://vocab.belgif.be/auth/datatheme/>.
+@prefix datatheme_eu: <http://publications.europa.eu/resource/authority/data-theme/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix file_type: <http://publications.europa.eu/resource/authority/file-type/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix frequency: <http://publications.europa.eu/resource/authority/frequency/>.
+@prefix gemet: <http://www.eionet.europa.eu/gemet/concept/>.
+@prefix licence: <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/>.
+@prefix metadata: <https://data.omgeving.vlaanderen.be/ns/metadata#>.
+@prefix mest-bodem-veevoeder: <https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/>.
+@prefix omg_catalog: <https://data.omgeving.vlaanderen.be/id/catalog/>.
+@prefix omg_catalog_doc: <https://data.omgeving.vlaanderen.be/doc/catalog/>.
+@prefix omg_collection: <https://data.bodemenondergrond.vlaanderen.be/id/collection/>.
+@prefix omg_dataservice: <https://data.bodemenondergrond.vlaanderen.be/id/dataservice/>.
+@prefix omg_dataset_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/dataset/>.
+@prefix omg_dataset: <https://data.bodemenondergrond.vlaanderen.be/id/dataset/>.
+@prefix omg_distribution_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/distribution/>.
+@prefix omg_distribution: <https://data.bodemenondergrond.vlaanderen.be/id/distribution/>.
+@prefix omg_graphcollection: <https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/>.
+@prefix omg_graph: <https://data.bodemenondergrond.vlaanderen.be/id/graph/>.
+@prefix omg_id: <https://data.bodemenondergrond.vlaanderen.be/id/>.
+@prefix omg_named_graph: <https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/>.
+@prefix omg_ontology: <https://data.bodemenondergrond.vlaanderen.be/id/ontology/>.
+@prefix omg_package: <https://data.bodemenondergrond.vlaanderen.be/id/package/>.
+@prefix omg_periodoftime: <https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/>.
+@prefix omg_service: <https://data.bodemenondergrond.vlaanderen.be/id/service/>.
+@prefix omg_vcard: <https://data.bodemenondergrond.vlaanderen.be/id/vcard/>.
+@prefix ovo: <http://data.vlaanderen.be/id/organisatie/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix repo: <https://repo.omgeving.vlaanderen.be/artifactory/release/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix spdx: <http://spdx.org/rdf/terms#>.
+@prefix ssd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix ts: <http://www.w3.org/ns/formats/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix wise: <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix water-gop: <https://emis.vito.be/nl/erkende-laboratoria/water-gop/>.
+@prefix bodem-afvalstoffen-ovam: <https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/>.
 
-colt:bemonsteringsprocedures
-        rdf:type        skos:Collection;
-        dc:identifier   "bemonsteringsprocedures";
-        skos:inScheme   cs:bemonsteringsprocedure;
-        skos:member     ct:cam2019 , ct:5119-1991 , ct:22475-1-2007 , ct:cma , ct:csp-1.1 , ct:bam , ct:22475-1-2021 , ct:wac , ct:boc;
-        skos:prefLabel  "Collectie van bemonsteringsprocedures."@nl .
-
-ct:cma  rdf:type           skos:Concept;
-        rdfs:seeAlso       bodem-afvalstoffen-ovam:compendium-cma;
-        dc:identifier      "cma";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "cma";
-        skos:prefLabel     "Compendium CMA"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:22475-1-2007  rdf:type  skos:Concept;
-        rdfs:seeAlso       <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=241294&p40_language_code=nl&p40_detail_id=36579>;
-        dc:identifier      "22475-1-2007";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "22475-1-2007";
-        skos:prefLabel     "NBN EN ISO 22475-1:2007"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:wac  rdf:type           skos:Concept;
-        rdfs:seeAlso       water-gop:compendium-wac;
-        dc:identifier      "wac";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "wac";
-        skos:prefLabel     "Compendium WAC"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:csp-1.1  rdf:type       skos:Concept;
-        rdfs:seeAlso       <https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf>;
-        dc:identifier      "csp-1.1";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "csp-1.1";
-        skos:prefLabel     "Cmon staalnameprotocol"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:cam2019  rdf:type       skos:Concept;
-        rdfs:seeAlso       <https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf>;
-        dc:identifier      "cam2019";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "cam2019";
-        skos:prefLabel     "Code van Goede Praktijk voor Archeologie en Metaaldetectie"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:22475-1-2021  rdf:type  skos:Concept;
-        rdfs:seeAlso       <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&p40_language_code=en&p40_detail_id=98267>;
-        dc:identifier      "22475-1-2021";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "22475-1-2021";
-        skos:prefLabel     "NBN EN ISO 22475-1:2021"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:5119-1991  rdf:type     skos:Concept;
-        rdfs:seeAlso       <https://www.nen.nl/en/nen-5119-1991-nl-7926>;
-        dc:identifier      "5119-1991";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "5119-1991";
-        skos:prefLabel     "NEN 5119:1991"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:bam  rdf:type           skos:Concept;
-        rdfs:seeAlso       mest-bodem-veevoeder:compendium-bam;
-        dc:identifier      "bam";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "bam";
-        skos:prefLabel     "Compendium BAM"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-ct:boc  rdf:type           skos:Concept;
-        rdfs:seeAlso       bodembescherming-gop:compendium-boc;
-        dc:identifier      "boc";
-        skos:inScheme      cs:bemonsteringsprocedure;
-        skos:notation      "boc";
-        skos:prefLabel     "Compendium BOC"@nl;
-        skos:topConceptOf  cs:bemonsteringsprocedure .
-
-cs:bemonsteringsprocedure
-        rdf:type            skos:ConceptScheme;
-        dc:identifier       "bemonsteringsprocedure";
-        skos:definition     "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl;
-        skos:hasTopConcept  ct:cma , ct:22475-1-2021 , ct:cam2019 , ct:22475-1-2007 , ct:csp-1.1 , ct:5119-1991 , ct:boc , ct:bam , ct:wac;
-        skos:prefLabel      "Codelijst bemonsteringsprocedure."@nl .
+collectie:bemonsteringsprocedures dc:identifier "be.vlaanderen.bodemenondergrond.data.id.collection.bemonsteringsprocedure.bemonsteringsprocedures";
+    a skos:Collection;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:member <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cam2019, concept:cma, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1>, concept:wac;
+    skos:prefLabel "Collectie van bemonsteringsprocedures."@nl.
+<https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.22475-1-2007";
+    a skos:Concept;
+    rdfs:seeAlso <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=241294&p40_language_code=nl&p40_detail_id=36579>;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "22475-1-2007";
+    skos:prefLabel "NBN EN ISO 22475-1:2007"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+<https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.22475-1-2021";
+    a skos:Concept;
+    rdfs:seeAlso <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&p40_language_code=en&p40_detail_id=98267>;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "22475-1-2021";
+    skos:prefLabel "NBN EN ISO 22475-1:2021"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+<https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.5119-1991";
+    a skos:Concept;
+    rdfs:seeAlso <https://www.nen.nl/en/nen-5119-1991-nl-7926>;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "5119-1991";
+    skos:prefLabel "NEN 5119:1991"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:bam dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.bam";
+    a skos:Concept;
+    rdfs:seeAlso mest-bodem-veevoeder:compendium-bam;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "bam";
+    skos:prefLabel "Compendium BAM"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:boc dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.boc";
+    a skos:Concept;
+    rdfs:seeAlso bodembescherming-gop:compendium-boc;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "boc";
+    skos:prefLabel "Compendium BOC"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:cam2019 dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cam2019";
+    a skos:Concept;
+    rdfs:seeAlso <https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf>;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "cam2019";
+    skos:prefLabel "Code van Goede Praktijk voor Archeologie en Metaaldetectie"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:cma dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cma";
+    a skos:Concept;
+    rdfs:seeAlso bodem-afvalstoffen-ovam:compendium-cma;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "cma";
+    skos:prefLabel "Compendium CMA"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+<https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp-1.1";
+    a skos:Concept;
+    rdfs:seeAlso <https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf>;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "csp-1.1";
+    skos:prefLabel "Cmon staalnameprotocol"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:wac dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.wac";
+    a skos:Concept;
+    rdfs:seeAlso water-gop:compendium-wac;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "wac";
+    skos:prefLabel "Compendium WAC"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+conceptscheme:bemonsteringsprocedure dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringsprocedure";
+    a skos:ConceptScheme;
+    skos:definition "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl;
+    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cam2019, concept:cma, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1>, concept:wac;
+    skos:note "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl;
+    skos:prefLabel "Codelijst bemonsteringsprocedure."@nl.
