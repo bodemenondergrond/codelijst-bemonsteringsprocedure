@@ -69,9 +69,9 @@ metadata :
     accessRights :  http://publications.europa.eu/resource/authority/access-right/PUBLIC
     accrualPeriodicity : http://publications.europa.eu/resource/authority/frequency/IRREG
     dct.language : http://publications.europa.eu/resource/authority/language/NLD
-    landingPage  : https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html
+    landingPage  : https://data.bodemenondergrond.vlaanderen.be/doc/catalog/codelijst.html
   catalog :
-    uri : https://data.omgeving.vlaanderen.be/id/catalog
+    uri : https://data.bodemenondergrond.vlaanderen.be/id/catalog/codelijst
     type: http://www.w3.org/ns/dcat#Catalog
   dataset :
     temporal : https://data.omgeving.vlaanderen.be/id/periodoftime/dataset_omg
@@ -132,8 +132,8 @@ prefixes :
   licence: http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/
   metadata: https://data.omgeving.vlaanderen.be/ns/metadata#
   mest-bodem-veevoeder: https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/
-  omg_catalog: https://data.omgeving.vlaanderen.be/id/catalog/
-  omg_catalog_doc: https://data.omgeving.vlaanderen.be/doc/catalog/
+  omg_catalog: https://data.bodemenondergrond.vlaanderen.be/id/catalog/
+  omg_catalog_doc: https://data.bodemenondergrond.vlaanderen.be/doc/catalog/
   omg_collection: https://data.bodemenondergrond.vlaanderen.be/id/collection/
   omg_dataservice: https://data.bodemenondergrond.vlaanderen.be/id/dataservice/
   omg_dataset_doc: https://data.bodemenondergrond.vlaanderen.be/doc/dataset/

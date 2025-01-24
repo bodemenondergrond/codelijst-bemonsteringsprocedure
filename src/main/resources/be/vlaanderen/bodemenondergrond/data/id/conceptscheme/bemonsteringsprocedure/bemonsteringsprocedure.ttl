@@ -23,8 +23,8 @@
 @prefix licence: <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/>.
 @prefix metadata: <https://data.omgeving.vlaanderen.be/ns/metadata#>.
 @prefix mest-bodem-veevoeder: <https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/>.
-@prefix omg_catalog: <https://data.omgeving.vlaanderen.be/id/catalog/>.
-@prefix omg_catalog_doc: <https://data.omgeving.vlaanderen.be/doc/catalog/>.
+@prefix omg_catalog: <https://data.bodemenondergrond.vlaanderen.be/id/catalog/>.
+@prefix omg_catalog_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/catalog/>.
 @prefix omg_collection: <https://data.bodemenondergrond.vlaanderen.be/id/collection/>.
 @prefix omg_dataservice: <https://data.bodemenondergrond.vlaanderen.be/id/dataservice/>.
 @prefix omg_dataset_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/dataset/>.
