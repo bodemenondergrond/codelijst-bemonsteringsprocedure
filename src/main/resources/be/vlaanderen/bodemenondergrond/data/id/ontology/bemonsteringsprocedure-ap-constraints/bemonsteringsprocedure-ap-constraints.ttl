@@ -52,9 +52,9 @@ beo_ag_cl:creator
 # Node Shapes
 ons:schema
     a                sh:NodeShape ;
-    rdfs:label       "conceptschema van matrices"@en ;
-    sh:name          "conceptschema van matrices"@en ;
-    sh:description   "Het schema waarbinnen de matrices gedefinieerd zijn"@en ;
+    rdfs:label       "conceptschema van bemonsteringsprocedures"@en ;
+    sh:name          "conceptschema van bemonsteringsprocedures"@en ;
+    sh:description   "Het schema waarbinnen de bemonsteringsprocedures gedefinieerd zijn"@en ;
     rdfs:isDefinedBy beo_ont:bemonsteringsprocedure, beo_voc:bemonsteringsprocedure ;
     sh:property      omg_ps:conceptscheme_prefLabel, omg_ps:schema_hasTopConcept, omg_ps:dc_identifier, omg_ps:notation, omg_ps:note,
                      omg_ps:definition, omg_ps:rdf_type;
@@ -67,7 +67,7 @@ ons:collection
     a                sh:NodeShape ;
     rdfs:label       "verzameling"@en ;
     sh:name          "verzameling"@en ;
-    sh:description   "Verzamelingen bundelen matrices met gelijkaardige eigenschappen, analysemethoden of matrices waarin ze gemeten worden."@en ;
+    sh:description   "Verzamelingen bundelen bemonsteringsprocedures met gelijkaardige eigenschappen."@en ;
     rdfs:isDefinedBy beo_ont:bemonsteringsprocedure, beo_voc:bemonsteringsprocedure ;
     sh:property      omg_ps:prefLabel, omg_ps:collection_member, omg_ps:dc_identifier, omg_ps:notation,
                      omg_ps:inScheme, omg_ps:rdf_type;
@@ -78,9 +78,9 @@ ons:collection
 
 ons:concept
     a                sh:NodeShape ;
-    rdfs:label       "matrix"@en ;
-    sh:name          "matrix"@en ;
-    sh:description   "analysemethodes"@en ;
+    rdfs:label       "bemonsteringsprocedures"@en ;
+    sh:name          "bemonsteringsprocedures"@en ;
+    sh:description   "bemonsteringsprocedures"@en ;
     rdfs:comment     "compendia onderhouden door VITO"@en ;
     rdfs:isDefinedBy beo_ont:bemonsteringsprocedure, beo_voc:bemonsteringsprocedure ;
     sh:property      omg_ps:notation, omg_ps:inScheme,
@@ -237,7 +237,7 @@ omg_ps:notation
     a                sh:PropertyShape ;
     rdfs:label       "notatie"@en ;
     sh:name          "notatie"@en ;
-    sh:description   "Een notatie, ook wel classificatiecode genoemd, is een reeks tekens zoals \"PCB151\" of \"EtFOSA\" die wordt gebruikt om een matrix op unieke wijze te identificeren binnen de context van dit schema."@en ;
+    sh:description   "Een notatie, ook wel classificatiecode genoemd, is een reeks tekens die wordt gebruikt om een bemonsteringsprocedures op unieke wijze te identificeren binnen de context van dit schema."@en ;
     rdfs:isDefinedBy beo_ont:bemonsteringsprocedure, beo_voc:bemonsteringsprocedure ;
     sh:datatype      xsd:string ;
     sh:nodeKind      sh:Literal ;
@@ -248,7 +248,7 @@ omg_ps:unique_notation
     a                  sh:PropertyShape ;
     rdfs:label         "unieke notatie"@en ;
     sh:name            "unieke notatie"@en ;
-    sh:description     "Een notatie, ook wel classificatiecode genoemd, is een reeks tekens zoals \"PCB151\" of \"EtFOSA\" die wordt gebruikt om een matrix op unieke wijze te identificeren binnen de context van dit schema. Er kan vanuit verschillende classificatiesystemen, met meerdere notaties verwezen worden naar een matrix, maar een notatie is uniek voor een matrix, ttz. vanuit 1 notatie kan slechts naar 1 matrix worden verwezen."@en ;
+    sh:description     "Een notatie, ook wel classificatiecode genoemd, is een reeks tekens die wordt gebruikt om een bemonsteringsprocedures op unieke wijze te identificeren binnen de context van dit schema. Er kan vanuit verschillende classificatiesystemen, met meerdere notaties verwezen worden naar een matrix, maar een notatie is uniek voor een matrix, ttz. vanuit 1 notatie kan slechts naar 1 matrix worden verwezen."@en ;
     rdfs:isDefinedBy   beo_ont:bemonsteringsprocedure, beo_voc:bemonsteringsprocedure ;
     sh:nodeKind        sh:IRI ;
     sh:targetObjectsOf skos:notation ;

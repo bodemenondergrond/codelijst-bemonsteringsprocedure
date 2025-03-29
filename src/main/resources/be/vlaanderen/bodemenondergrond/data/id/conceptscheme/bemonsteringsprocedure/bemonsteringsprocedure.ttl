@@ -58,44 +58,49 @@
 @prefix water-gop: <https://emis.vito.be/nl/erkende-laboratoria/water-gop/>.
 @prefix bodem-afvalstoffen-ovam: <https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/>.
 
-collectie:bemonsteringsprocedures dc:identifier "be.vlaanderen.bodemenondergrond.data.id.collection.bemonsteringsprocedure.bemonsteringsprocedures";
-    a skos:Collection;
-    skos:inScheme conceptscheme:bemonsteringsprocedure;
-    skos:member <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cam2019, concept:cma, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1>, concept:wac;
-    skos:prefLabel "Collectie van bemonsteringsprocedures."@nl.
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.22475-1-2007";
     a skos:Concept;
     rdfs:seeAlso <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=241294&p40_language_code=nl&p40_detail_id=36579>;
+    skos:definition "NBN EN ISO standaard voor 'Geotechnisch onderzoek en beproeving - Monsternemingsmethoden en grondwatermetingen - Deel 1: Technische uitvoeringsprincipes' versie 2007."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "22475-1-2007";
+    skos:note "NBN EN ISO standaard voor 'Geotechnisch onderzoek en beproeving - Monsternemingsmethoden en grondwatermetingen - Deel 1: Technische uitvoeringsprincipes' versie 2007."@nl;
     skos:prefLabel "NBN EN ISO 22475-1:2007"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.22475-1-2021";
     a skos:Concept;
     rdfs:seeAlso <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&p40_language_code=en&p40_detail_id=98267>;
+    skos:definition "NBN EN ISO standaard voor 'Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater' versie 2021."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "22475-1-2021";
+    skos:note "NBN EN ISO standaard voor 'Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater' versie 2021."@nl;
     skos:prefLabel "NBN EN ISO 22475-1:2021"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.5119-1991";
     a skos:Concept;
     rdfs:seeAlso <https://www.nen.nl/en/nen-5119-1991-nl-7926>;
+    skos:definition "NEN EN ISO standaard voor 'Geotechniek - Boren en monsterneming in grond' versie 1991."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "5119-1991";
+    skos:note "NEN EN ISO standaard voor 'Geotechniek - Boren en monsterneming in grond' versie 1991."@nl;
     skos:prefLabel "NEN 5119:1991"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:bam dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.bam";
     a skos:Concept;
     rdfs:seeAlso mest-bodem-veevoeder:compendium-bam;
+    skos:definition "Het compendium voor bemonsterings- en analysemethodes voor mest, bodem en veevoeder in het kader van de Vlaamse milieuwetgeving."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "bam";
+    skos:note "Het compendium voor bemonsterings- en analysemethodes voor mest, bodem en veevoeder in het kader van de Vlaamse milieuwetgeving."@nl;
     skos:prefLabel "Compendium BAM"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:boc dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.boc";
     a skos:Concept;
     rdfs:seeAlso bodembescherming-gop:compendium-boc;
+    skos:definition "Het compendium voor de monsterneming, meting en analyse in het kader van bodembescherming, dit compendium is van toepassing voor laboratoria erkend voor de discipline bodem, deeldomein bodembescherming in het kader van het Besluit van de Vlaamse Regering over de betalingen in het kader van het GLB."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "boc";
+    skos:note "Het compendium voor de monsterneming, meting en analyse in het kader van bodembescherming, dit compendium is van toepassing voor laboratoria erkend voor de discipline bodem, deeldomein bodembescherming in het kader van het Besluit van de Vlaamse Regering over de betalingen in het kader van het GLB."@nl;
     skos:prefLabel "Compendium BOC"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:cam2019 dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cam2019";
@@ -105,30 +110,45 @@ concept:cam2019 dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.b
     skos:notation "cam2019";
     skos:prefLabel "Code van Goede Praktijk voor Archeologie en Metaaldetectie"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:cgpam dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cgpam";
+    a skos:Concept;
+    rdfs:seeAlso <https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf>;
+    skos:definition "De Code van Goede Praktijk voor Archeologie en Metaaldetectie voor erkende archeologen en erkende metaaldetectoristen in Vlaanderen. Deze code is bedoeld voor de uitvoering van en rapportering over archeologisch vooronderzoek en archeologische opgravingen en voor het gebruik van metaaldetectoren."@nl;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "cgpam";
+    skos:note "De Code van Goede Praktijk voor Archeologie en Metaaldetectie voor erkende archeologen en erkende metaaldetectoristen in Vlaanderen. Deze code is bedoeld voor de uitvoering van en rapportering over archeologisch vooronderzoek en archeologische opgravingen en voor het gebruik van metaaldetectoren."@nl;
+    skos:prefLabel "Code van Goede Praktijk voor Archeologie en Metaaldetectie"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:cma dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cma";
     a skos:Concept;
     rdfs:seeAlso bodem-afvalstoffen-ovam:compendium-cma;
+    skos:definition "Het compendium voor de monsterneming en analyse in het kader van de Vlaamse milieuwetgeving."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "cma";
+    skos:note "Het compendium voor de monsterneming en analyse in het kader van de Vlaamse milieuwetgeving."@nl;
     skos:prefLabel "Compendium CMA"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp-1.1";
     a skos:Concept;
     rdfs:seeAlso <https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf>;
+    skos:definition "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "csp-1.1";
+    skos:note "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
     skos:prefLabel "Cmon staalnameprotocol"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:wac dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.wac";
     a skos:Concept;
     rdfs:seeAlso water-gop:compendium-wac;
+    skos:definition "Het compendium voor de monsterneming, meting en analyse van water voor  laboratoria in het kader van de Vlaamse erkenningswetgeving VLAREL."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "wac";
+    skos:note "Het compendium voor de monsterneming, meting en analyse van water voor  laboratoria in het kader van de Vlaamse erkenningswetgeving VLAREL."@nl;
     skos:prefLabel "Compendium WAC"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 conceptscheme:bemonsteringsprocedure dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringsprocedure";
     a skos:ConceptScheme;
-    skos:definition "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl;
-    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cam2019, concept:cma, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1>, concept:wac;
-    skos:note "Beschrijving welke procedure werd gevolgd bij de bemonstering."@nl;
+    skos:definition "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd."@nl;
+    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cam2019, concept:cgpam, concept:cma, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1>, concept:wac;
+    skos:note "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd."@nl;
     skos:prefLabel "Codelijst bemonsteringsprocedure."@nl.
