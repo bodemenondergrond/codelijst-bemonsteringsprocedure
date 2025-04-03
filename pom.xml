@@ -7,14 +7,12 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>be.vlaanderen.bodemenondergrond.data.id.graph</groupId> <!-- e.g. be.vlaanderen.bodemenondergrond.data.id.graph -->
-  <artifactId>codelijst-bemonsteringsprocedure</artifactId> <!-- e.g. codelijst-testrepo -->
-  <version>0.1.3-SNAPSHOT</version> <!-- 0.1.0-SNAPSHOT -->
+  <groupId>be.vlaanderen.bodemenondergrond.data.id.graph</groupId>
+  <artifactId>codelijst-bemonsteringsprocedure</artifactId> 
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>codelijst-bemonsteringsprocedure</name> <!-- e.g. codelijst-testrepo -->
-
-
+  <name>codelijst-bemonsteringsprocedure</name>
   <scm>
         <connection>scm:git:https://github.com/bodemenondergrond/codelijst-bemonsteringsprocedure.git</connection>
         <developerConnection>scm:git:https://github.com/bodemenondergrond/codelijst-bemonsteringsprocedure.git</developerConnection>
