@@ -451,16 +451,6 @@
             "topConceptOf": "conceptscheme:bemonsteringsprocedure"
         },
         {
-            "id": "concept:cam2019",
-            "type": "skos:Concept",
-            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cam2019",
-            "seeAlso": "https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf",
-            "inScheme": "conceptscheme:bemonsteringsprocedure",
-            "notation": "cam2019",
-            "prefLabel": "Code van Goede Praktijk voor Archeologie en Metaaldetectie",
-            "topConceptOf": "conceptscheme:bemonsteringsprocedure"
-        },
-        {
             "id": "concept:cgpam",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cgpam",
@@ -485,13 +475,13 @@
             "topConceptOf": "conceptscheme:bemonsteringsprocedure"
         },
         {
-            "id": "concept:csp-1.1",
+            "id": "concept:csp",
             "type": "skos:Concept",
-            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp-1.1",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp",
             "seeAlso": "https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf",
             "definition": "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'.",
             "inScheme": "conceptscheme:bemonsteringsprocedure",
-            "notation": "csp-1.1",
+            "notation": "csp",
             "note": "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'.",
             "prefLabel": "Cmon staalnameprotocol",
             "topConceptOf": "conceptscheme:bemonsteringsprocedure"
@@ -519,10 +509,9 @@
                 "concept:5119-1991",
                 "concept:bam",
                 "concept:boc",
-                "concept:cam2019",
                 "concept:cgpam",
                 "concept:cma",
-                "concept:csp-1.1",
+                "concept:csp",
                 "concept:wac"
             ],
             "note": "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd.",

@@ -103,13 +103,6 @@ concept:boc dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemon
     skos:note "Het compendium voor de monsterneming, meting en analyse in het kader van bodembescherming, dit compendium is van toepassing voor laboratoria erkend voor de discipline bodem, deeldomein bodembescherming in het kader van het Besluit van de Vlaamse Regering over de betalingen in het kader van het GLB."@nl;
     skos:prefLabel "Compendium BOC"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
-concept:cam2019 dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cam2019";
-    a skos:Concept;
-    rdfs:seeAlso <https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf>;
-    skos:inScheme conceptscheme:bemonsteringsprocedure;
-    skos:notation "cam2019";
-    skos:prefLabel "Code van Goede Praktijk voor Archeologie en Metaaldetectie"@nl;
-    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:cgpam dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.cgpam";
     a skos:Concept;
     rdfs:seeAlso <https://www.onroerenderfgoed.be/sites/default/files/2019-03/CGP_V4_geen_TC_20190322.pdf>;
@@ -128,12 +121,12 @@ concept:cma dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemon
     skos:note "Het compendium voor de monsterneming en analyse in het kader van de Vlaamse milieuwetgeving."@nl;
     skos:prefLabel "Compendium CMA"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
-<https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp-1.1";
+concept:csp dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp";
     a skos:Concept;
     rdfs:seeAlso <https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf>;
     skos:definition "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
-    skos:notation "csp-1.1";
+    skos:notation "csp";
     skos:note "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
     skos:prefLabel "Cmon staalnameprotocol"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
@@ -149,6 +142,6 @@ concept:wac dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemon
 conceptscheme:bemonsteringsprocedure dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringsprocedure";
     a skos:ConceptScheme;
     skos:definition "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd."@nl;
-    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cam2019, concept:cgpam, concept:cma, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/csp-1.1>, concept:wac;
+    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cgpam, concept:cma, concept:csp, concept:wac;
     skos:note "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd."@nl;
     skos:prefLabel "Codelijst bemonsteringsprocedure."@nl.

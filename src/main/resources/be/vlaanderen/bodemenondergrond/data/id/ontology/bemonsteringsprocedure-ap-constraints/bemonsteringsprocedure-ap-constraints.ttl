@@ -89,7 +89,7 @@ ons:concept
                      omg_ps:topConceptOf, omg_ps:altLabel, omg_ps:dc_identifier,
                      omg_ps:rdf_type, omg_ps:note, omg_ps:broaderTransitive, omg_ps:broader,
                      omg_ps:narrowerTransitive, omg_ps:narrower, omg_ps:semanticRelation ,
-                     omg_ps:seeAlso;
+                     omg_ps:seeAlso,omg_ps:owl_deprecated;
     sh:closed true ;
     sh:targetClass   skos:Concept .
 
@@ -323,6 +323,16 @@ omg_ps:dc_identifier
     sh:maxCount      1 ;
     sh:nodeKind      sh:Literal ;
     sh:path          dc:identifier .
+
+omg_ps:owl_deprecated
+    a                sh:PropertyShape ;
+    rdfs:label       "deprecated - niet meer te gebruiken"@en ;
+    sh:name          "deprecated - niet meer te gebruiken"@en ;
+    sh:description   "geeft aan of het een deprecated waarde is."@en ;
+    rdfs:isDefinedBy beo_ont:bemonsteringsprocedure, beo_voc:bemonsteringsprocedure ;
+    sh:maxCount      1 ;
+    sh:nodeKind      sh:Literal ;
+    sh:path          owl:deprecated .
 
 
 omg_ps:conceptscheme_prefLabel
