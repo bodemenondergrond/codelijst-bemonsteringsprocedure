@@ -94,6 +94,22 @@ concept:bam dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemon
     skos:note "Het compendium voor bemonsterings- en analysemethodes voor mest, bodem en veevoeder in het kader van de Vlaamse milieuwetgeving."@nl;
     skos:prefLabel "Compendium BAM"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:bbb dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.bbb";
+    a skos:Concept;
+    skos:definition "De procedure voor het graven van een profielput en nemen van bodemmonsters in de wand van de profielput zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart."@nl;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "bbb";
+    skos:note "De procedure voor het graven van een profielput en nemen van bodemmonsters in de wand van de profielput zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart."@nl;
+    skos:prefLabel "Belgische bodemkartering bodemprofiel"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
+concept:bbo dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.bbo";
+    a skos:Concept;
+    skos:definition "De procedure voor het nemen van oppervlakte bodemmonsters zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart."@nl;
+    skos:inScheme conceptscheme:bemonsteringsprocedure;
+    skos:notation "bbo";
+    skos:note "De procedure voor het nemen van oppervlakte bodemmonsters zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart."@nl;
+    skos:prefLabel "Belgische bodemkartering oppervlaktemonster"@nl;
+    skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:boc dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.boc";
     a skos:Concept;
     rdfs:seeAlso bodembescherming-gop:compendium-boc;
@@ -142,6 +158,6 @@ concept:wac dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemon
 conceptscheme:bemonsteringsprocedure dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringsprocedure";
     a skos:ConceptScheme;
     skos:definition "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd."@nl;
-    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:boc, concept:cgpam, concept:cma, concept:csp, concept:wac;
+    skos:hasTopConcept <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2007>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021>, <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991>, concept:bam, concept:bbb, concept:bbo, concept:boc, concept:cgpam, concept:cma, concept:csp, concept:wac;
     skos:note "Een workflow, protocol, plan, algoritme of berekeningswijze waarin wordt gespecifieerd hoe de bemonstering moet worden uitgevoerd."@nl;
     skos:prefLabel "Codelijst bemonsteringsprocedure."@nl.

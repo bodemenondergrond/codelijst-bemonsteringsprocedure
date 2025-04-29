@@ -439,6 +439,28 @@
             "topConceptOf": "conceptscheme:bemonsteringsprocedure"
         },
         {
+            "id": "concept:bbb",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.bbb",
+            "definition": "De procedure voor het graven van een profielput en nemen van bodemmonsters in de wand van de profielput zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart.",
+            "inScheme": "conceptscheme:bemonsteringsprocedure",
+            "notation": "bbb",
+            "note": "De procedure voor het graven van een profielput en nemen van bodemmonsters in de wand van de profielput zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart.",
+            "prefLabel": "Belgische bodemkartering bodemprofiel",
+            "topConceptOf": "conceptscheme:bemonsteringsprocedure"
+        },
+        {
+            "id": "concept:bbo",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.bbo",
+            "definition": "De procedure voor het nemen van oppervlakte bodemmonsters zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart.",
+            "inScheme": "conceptscheme:bemonsteringsprocedure",
+            "notation": "bbo",
+            "note": "De procedure voor het nemen van oppervlakte bodemmonsters zoals toegepast door het 'Centrum voor Grondonderzoek' gedurende de staalnamecampagne die werd uitgevoerd van 1949 tot 1971 voor het opstellen van de Belgische bodemkaart.",
+            "prefLabel": "Belgische bodemkartering oppervlaktemonster",
+            "topConceptOf": "conceptscheme:bemonsteringsprocedure"
+        },
+        {
             "id": "concept:boc",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.boc",
@@ -508,6 +530,8 @@
                 "concept:22475-1-2021",
                 "concept:5119-1991",
                 "concept:bam",
+                "concept:bbb",
+                "concept:bbo",
                 "concept:boc",
                 "concept:cgpam",
                 "concept:cma",
