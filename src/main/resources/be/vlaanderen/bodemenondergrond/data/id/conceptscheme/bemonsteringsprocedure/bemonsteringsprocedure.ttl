@@ -70,10 +70,10 @@
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/22475-1-2021> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.22475-1-2021";
     a skos:Concept;
     rdfs:seeAlso <https://app.nbn.be/data/r/platform/frontend/detail?p40_id=188163&p40_language_code=en&p40_detail_id=98267>;
-    skos:definition "NBN EN ISO standaard voor 'Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater' versie 2021."@nl;
+    skos:definition "NBN EN ISO standaard voor 'Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater' versie 2021."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "22475-1-2021";
-    skos:note "NBN EN ISO standaard voor 'Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater' versie 2021."@nl;
+    skos:note "NBN EN ISO standaard voor 'Geotechnical investigation and testing - Sampling methods and groundwater measurements - Part 1: Technical principles for the sampling of soil, rock and groundwater' versie 2021."@nl;
     skos:prefLabel "NBN EN ISO 22475-1:2021"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/bemonsteringsprocedure/5119-1991> dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.5119-1991";
@@ -140,19 +140,19 @@ concept:cma dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemon
 concept:csp dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.csp";
     a skos:Concept;
     rdfs:seeAlso <https://omgeving.vlaanderen.be/sites/default/files/2023-05/protocol%20staalname%20Cmon%201.1%20-%20werkdocument.pdf>;
-    skos:definition "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
+    skos:definition "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "csp";
-    skos:note "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
+    skos:note "Het staalnameprotocol voor de bodembemonstering aan de hand van een grondboring voor het bepalen van de koolstofvoorraad binnen het Vlaamse bodemkoolstofmonitoringnetwerk 'Cmon'."@nl;
     skos:prefLabel "Cmon staalnameprotocol"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 concept:wac dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.bemonsteringsprocedure.wac";
     a skos:Concept;
     rdfs:seeAlso water-gop:compendium-wac;
-    skos:definition "Het compendium voor de monsterneming, meting en analyse van water voor  laboratoria in het kader van de Vlaamse erkenningswetgeving VLAREL."@nl;
+    skos:definition "Het compendium voor de monsterneming, meting en analyse van water voor laboratoria in het kader van de Vlaamse erkenningswetgeving VLAREL."@nl;
     skos:inScheme conceptscheme:bemonsteringsprocedure;
     skos:notation "wac";
-    skos:note "Het compendium voor de monsterneming, meting en analyse van water voor  laboratoria in het kader van de Vlaamse erkenningswetgeving VLAREL."@nl;
+    skos:note "Het compendium voor de monsterneming, meting en analyse van water voor laboratoria in het kader van de Vlaamse erkenningswetgeving VLAREL."@nl;
     skos:prefLabel "Compendium WAC"@nl;
     skos:topConceptOf conceptscheme:bemonsteringsprocedure.
 conceptscheme:bemonsteringsprocedure dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.bemonsteringsprocedure";
